@@ -5,3 +5,5 @@ It removes the background colour form the selection text and adds Text Shadow pr
 Planning to add Preferences UI to allow the users to edit the Text Color and Shadow's angle, depth and color soon.
 
 Presently the selection color is in Blue by default. You can edit the color and shadow properties, directly in the script.
+
+![alt tag](http://imageshack.com/a/img661/5555/Q6izoj.png)
