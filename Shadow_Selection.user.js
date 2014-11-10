@@ -6,7 +6,7 @@
 // @version     1
 // @copyright	 2014, Anveshak
 // @supportURL  mailto:niwin93@gmail.com
-// @icon 		 http://imageshack.com/a/img910/9717/tlnJGD.png
+// @icon    http://imageshack.com/a/img910/9717/tlnJGD.png
 // @oujs:author Anveshak
 // @grant       none
 // ==/UserScript==
