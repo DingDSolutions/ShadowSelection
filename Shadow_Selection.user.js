@@ -5,6 +5,7 @@
 // @include     *
 // @version     1
 // @copyright	 2014, Anveshak
+// @groups  openuserjs.org, Browser, Theme, Styles
 // @supportURL  https://github.com/niwinnm/ShadowSelection/issues
 // @homepageURL https://github.com/niwinnm/ShadowSelection
 // @icon    http://imageshack.com/a/img910/9717/tlnJGD.png
