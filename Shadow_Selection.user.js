@@ -16,7 +16,7 @@
 // text-shadow: <X-position>px <Y-position>px <Shadow-Depth>px <color-hex-code>.
 // #0048FF (Blue Color) is used as default Shadow Selection color.
 // Use #352E7E to make it a dark blue color.
-// Use #EA4200 (Ubuntu's orange color) for Ubuntu's firefox. 
+// Use #EA4200 (Ubuntu's orange color) for Ubuntu's firefox.
 
 //For Firefox (Gecko) Browser
     style.innerHTML = "::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #0048FF;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 2px 2px #0048FF;}";
