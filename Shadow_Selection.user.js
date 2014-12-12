@@ -14,18 +14,18 @@
  var style=document.createElement("style");
 // Change the "text-shadow" property to change the Shadow Position and color. Syntax is give below.
 // text-shadow: <X-position>px <Y-position>px <Shadow-Depth>px <color-hex-code>
-// #352E7E (Blue Color) is used as default Shadow Selection color.
-// Use #328DFB to make it a light blue color.
+// #0048FF (Blue Color) is used as default Shadow Selection color.
+// Use #352E7E to make it a dark blue color.
 // Use #EA4200 (Ubuntu's orange color) for Ubuntu's firefox. 
 
 //For Firefox (Gecko) Browser
-    style.innerHTML = "::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #3356C6;}";
+    style.innerHTML = "::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #0048FF;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 2px 2px #0048FF;}";
 //For Chrome (Blink) Browser
-    style.innerHTML +=" ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}  input::selection { color: #328DFB; background: none repeat scroll 0% 0% transparent;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 0px 2px #352E7E;}";
+    style.innerHTML +=" ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 0px 2px #0048FF;}  input::selection { color: #3356C6; background: none repeat scroll 0% 0% transparent;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 0px 2px #0048FF;}";
 //For WebKit Browser
-    style.innerHTML +=" ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +=" ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #0048FF;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 2px 2px #0048FF;}";
 //For Other Browsers
-    style.innerHTML +=" ::-ms-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
-    style.innerHTML +=" ::-o-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +=" ::-ms-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #0048FF;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 2px 2px #0048FF;}";
+    style.innerHTML +=" ::-o-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #0048FF;} a::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 2px 2px #0048FF;}";
 
 document.body.appendChild(style); 
