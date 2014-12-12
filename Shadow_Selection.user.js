@@ -18,10 +18,14 @@
 // Use #328DFB to make it a light blue color.
 // Use #EA4200 (Ubuntu's orange color) for Ubuntu's firefox. 
 
-
-    style.innerHTML = "/* For Firefox (Gecko) Browser*/ ::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
-    style.innerHTML +="/* For Chrome (Blink) Browser */ ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;} input.normal::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
-    style.innerHTML +="/* For WebKit Browser */ ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
-    style.innerHTML +="/* For Other Browser */ ::-ms-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+//For Firefox (Gecko) Browser
+    style.innerHTML = "::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+//For Chrome (Blink) Browser
+    style.innerHTML +=" ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;} input::selection { color: #F00; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+//For WebKit Browser
+    style.innerHTML +=" ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+//For Other Browsers
+    style.innerHTML +=" ::-ms-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +=" ::-o-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
 
 document.body.appendChild(style); 
