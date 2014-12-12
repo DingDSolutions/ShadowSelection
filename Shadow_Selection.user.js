@@ -21,7 +21,7 @@
 //For Firefox (Gecko) Browser
     style.innerHTML = "::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
 //For Chrome (Blink) Browser
-    style.innerHTML +=" ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;} input::selection { color: #F00; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +=" ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}  input::selection { color: #328DFB; background: none repeat scroll 0% 0% transparent;}";
 //For WebKit Browser
     style.innerHTML +=" ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
 //For Other Browsers
