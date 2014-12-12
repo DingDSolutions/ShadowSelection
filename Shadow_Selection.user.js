@@ -12,11 +12,16 @@
 // @grant       none
 // ==/UserScript==
  var style=document.createElement("style");
-// edit the text-shadow property to change the Selection color and Shadow radius
-// #328DFB is used as default Shadow Selection style.
-// Use #EA4200 for Ubuntu's firefox selection style. 
+// Change the "text-shadow" property to change the Shadow Position and color. Syntax is give below.
+// text-shadow: <X-position>px <Y-position>px <Shadow-Depth>px <color-hex-code>
+// #352E7E (Blue Color) is used as default Shadow Selection color.
+// Use #328DFB to make it a light blue color.
+// Use #EA4200 (Ubuntu's orange color) for Ubuntu's firefox. 
 
-    style.innerHTML ="/*Firefox Browser*/ ::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 2px 0px 2px #328DFB;}";
-    style.innerHTML +="/* WebKit/Blink Browsers */ ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 2px 0px 2px #328DFB;}";
-    
+
+    style.innerHTML = "/* For Firefox (Gecko) Browser*/ ::-moz-selection { color: #000; background: none repeat scroll 100% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +="/* For Chrome (Blink) Browser */ ::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;} input.normal::selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +="/* For WebKit Browser */ ::-webkit-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+    style.innerHTML +="/* For Other Browser */ ::-ms-selection { color: #000; background: none repeat scroll 0% 0% transparent;text-shadow: 0px 0px 2px #352E7E;}";
+
 document.body.appendChild(style); 
