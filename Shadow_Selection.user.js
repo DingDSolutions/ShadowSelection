@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Shadow Selection
 // @namespace   Anveshak
-// @description Use this script to change your Browser's boring text selection color to a "Shadow based selection style"
+// @description Switch to an Awesome Shadow based text selection style for your browser. Works perfectly with almost all popular browsers. Easily edit the shadow color to any color of your choice.
 // @include     *
 // @version     1
 // @copyright	 2014, Anveshak
