@@ -3,7 +3,7 @@
 // @namespace   Anveshak
 // @description Switch to an Awesome Shadow based text selection style for your browser. Works perfectly with almost all popular browsers. Easily edit the shadow color to any color of your choice.
 // @include     *
-// @version     1
+// @version     2.0.3
 // @copyright	 2014, Anveshak
 // @supportURL  https://github.com/niwinnm/ShadowSelection/issues
 // @homepageURL https://github.com/niwinnm/ShadowSelection
